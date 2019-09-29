@@ -16,7 +16,6 @@ function changeNotation(){
     document.getElementById("notation").innerHTML = "Change Notation to Standard"; 
   } 
 }
-
-function 
+  
 
 
