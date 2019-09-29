@@ -20,7 +20,7 @@ function openTab(evt, pageName){
 var totalBPS = 0;
 var bullets = 0;
 var bulletstext = document.getElementById("bullets");
-var clickStr = 10;
+var clickStr = 1;
 var clickCost = 10;
 var refreshRateVar = 100;
 var notationScientific = false;
