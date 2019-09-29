@@ -1,9 +1,9 @@
-function valueSet(){ 
+function bulletSet(){ 
   if(notationScientfic){ 
-      document.getElementById("value").innerHTML = numberformat.format(value, {format: 'scientific'}) 
+      document.getElementById("bullets").innerHTML = numberformat.format(bullets, {format: 'scientific'}) 
   } 
   else{ 
-      document.getElementById("value").innerHTML = numberformat.format(value); 
+      document.getElementById("bullets").innerHTML = numberformat.format(bullets); 
   } 
 } 
 function changeNotation(){ 
@@ -17,5 +17,6 @@ function changeNotation(){
   } 
 }
 
+function 
 
 
