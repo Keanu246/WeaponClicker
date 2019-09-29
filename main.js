@@ -23,6 +23,7 @@ var bulletstext = document.getElementById("bullets");
 var clickStr = 1;
 var clickCost = 100;
 var refreshRateVar = 100;
+var notationScientific = false;
 var gunPrice = 10;
 var gunTotal = 0;
 var gunBPS = 1;
