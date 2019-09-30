@@ -61,12 +61,6 @@ function addBullets() { //function for clicking
 	//console.log(getCookie("bullets"))l;
 	document.getElementById("bullets").innerHTML = bullets.toFixed(1) + ' Bullets';
 }
-        if(notationScientfic){ 
-        document.getElementById("bullets").innerHTML = numberformat.format(bullets);
-} 
-        else{ 
-        document.getElementById("bullets").innerHTML = numberformat.format(bullets, {format: 'scientific'});
-}
 	    
 function buyGun() { //function for buying more guns
 	if(bullets >= gunPrice) {
