@@ -1,3 +1,2 @@
-npm install --save IdleFormat
-
-const numberformat = require('IdleFormat')
+function numberformat(){
+  if(bullets>=numberformat.format 
