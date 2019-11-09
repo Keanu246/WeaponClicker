@@ -419,11 +419,3 @@ var save = {
   rifle: rifle,
   assaultrifle: assaultrifle
 }
-
-localStorage.setItem("save",JSON.stringify(save)); 
-  document.getElementById("save").innerHTML = "Saved!"; 
-  window.setTimeout(reAddSave,5000); 
-} 
-function reAddSave(){ 
-  document.getElementById("save").innerHTML = "Save Game"; 
-} 
