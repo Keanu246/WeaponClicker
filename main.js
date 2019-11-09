@@ -411,3 +411,19 @@ function refreshRate() {
 	refreshRateVar = parseInt(document.getElementById("refreshRate").value);
 	document.getElementById("refreshRate").value;
 }
+
+var save = {
+  bullets: bullets,
+  gun: gun,
+  powergun: powergun,
+  rifle: rifle,
+  assaultrifle: assaultrifle
+}
+
+localStorage.setItem("save",JSON.stringify(save)); 
+  document.getElementById("save").innerHTML = "Saved!"; 
+  window.setTimeout(reAddSave,5000); 
+} 
+function reAddSave(){ 
+  document.getElementById("save").innerHTML = "Save Game"; 
+} 
