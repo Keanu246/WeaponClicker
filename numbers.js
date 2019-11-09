@@ -6,7 +6,7 @@ function numberformat(){
     document.getElementById("notation").innerHTML = "Change Notation to Scientific"; 
   } 
   else{ 
-    notationScientfic = true; 
+    scientificNotation = true; 
     document.getElementById("notation").innerHTML = "Change Notation to Standard"; 
   } 
 }
