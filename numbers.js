@@ -1,3 +1,3 @@
 function format() {
-		document.getElementById("formatBullets").innerHTML = numberformat.format(bullets);
+    document.getElementById("formatBullets").innerHTML = numberformat.format(bullets);
 } 
