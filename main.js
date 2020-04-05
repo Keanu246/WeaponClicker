@@ -78,7 +78,7 @@ function buyGun() { //function for buying more guns
 		document.getElementById("gunProduce").innerHTML = 'Shooting ' + (gunBPS * gunTotal).toFixed(1) + ' bullets per second';
 	}
 	else if(formatValue) {
-		document.getElementById("formatBullets").innerHTML = numberformat.format(gunPrice);
+		document.getElementById("gun").innerHTML = numberformat.format(gunPrice);
 	}
 }
 
