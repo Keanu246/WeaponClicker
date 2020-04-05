@@ -1,4 +1,4 @@
-function format() {
+function formatNumbers() {
     if(formatValue) {
         formatValue = true;
         document.getElementById("formatBullets").innerHTML = "Formatted!"
