@@ -77,7 +77,7 @@ function buyGun() { //function for buying more guns
 		document.getElementById("gun").innerHTML = 'Buy a Gun for ' + gunPrice + ' Bullets';
 		document.getElementById("gunAmmount").innerHTML = 'You have ' + gunTotal + ' Guns';
 		document.getElementById("gunProduce").innerHTML = 'Shooting ' + (gunBPS * gunTotal).toFixed(1) + ' bullets per second';
-	},
+	}
 	else if(formatValue) {
 		document.getElementById("gun").innerHTML = numberformat.format(gunPrice);
 	}
@@ -91,7 +91,7 @@ function buyPowerGun() { //function for buying more guns
 		document.getElementById("powergun").innerHTML = 'Buy a Power Gun for ' + powergunPrice + ' Bullets';
 		document.getElementById("powergunAmmount").innerHTML = 'You have ' + powergunTotal + ' Power Guns';
 		document.getElementById("powergunProduce").innerHTML = 'Shooting ' + (powergunBPS * powergunTotal).toFixed(1) + ' bullets per second';
-	},
+	}
 	else if(formatValue) {
 		document.getElementById("powergun").innerHTML = numberformat.format(powergunPrice);
 	}
