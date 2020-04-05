@@ -59,7 +59,8 @@ var powergunUpgrade2 = false;
 var powergunUpgrade3 = false;
 var powergunUpgrade4 = false;
 var powergunUpgrade5 = false;
-var powergunUpgrade6 = false
+var powergunUpgrade6 = false;
+var formatValue = false
 	
 function addBullets() { //function for clicking
 	bullets = bullets + clickStr;
@@ -75,6 +76,9 @@ function buyGun() { //function for buying more guns
 		document.getElementById("gun").innerHTML = 'Buy a Gun for ' + gunPrice + ' Bullets';
 		document.getElementById("gunAmmount").innerHTML = 'You have ' + gunTotal + ' Guns';
 		document.getElementById("gunProduce").innerHTML = 'Shooting ' + (gunBPS * gunTotal).toFixed(1) + ' bullets per second';
+	}
+	else if(formatValue) {
+		document.getElementById("formatBullets").innerHTML = numberformat.format(gunPrice);
 	}
 }
 
