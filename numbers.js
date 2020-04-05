@@ -3,7 +3,7 @@ function format() {
         formatValue = true
         document.getElementById("formatBullets").innerHTML = "Formatted!";
     }
-    else() {
+    else{
         formatValue = false
         document.getElementById("formatBullets").innerHTML = "Format";
     }
