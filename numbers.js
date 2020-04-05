@@ -1,4 +1,10 @@
 function format() {
-    document.getElementById("formatBullets").innerHTML = "Formatted!";
-    document.getElementById("bullets").innerHTML = numberformat.format(bullets);
+    if(formatValue) {
+        formatValue = true
+        document.getElementById("formatBullets").innerHTML = "Formatted!";
+    }
+    else() {
+        formatValue = false
+        document.getElementById("formatBullets").innerHTML = "Format";
+    }
 } 
