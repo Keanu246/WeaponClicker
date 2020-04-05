@@ -149,8 +149,8 @@ function buyPeacemaker() {
 		bullets = bullets - peacemakerPrice;
 		peacemakerTotal = peacemakerTotal + 1;
 		peacemakerPrice = Math.ceil(1000000000 * 1.19**peacemakerTotal);
-		document.getElementById("peacemaker").innerHTML = 'Buy an SCAR for ' + peacemakerPrice + ' Bullets';
-		document.getElementById("peacemakerAmmount").innerHTML = 'You have ' + peacemakerTotal + ' SCARs';
+		document.getElementById("peacemaker").innerHTML = 'Buy an Peacemaker for ' + peacemakerPrice + ' Bullets';
+		document.getElementById("peacemakerAmmount").innerHTML = 'You have ' + peacemakerTotal + ' Peacemakers';
 		document.getElementById("peacemakerProduce").innerHTML = 'Shooting ' + (peacemakerBPS * peacemakerTotal).toFixed(1) + ' bullets per second';
 	}
 }
