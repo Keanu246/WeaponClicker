@@ -78,12 +78,12 @@ function buyGun() { //function for buying more guns
 		bullets = bullets - gunPrice;
 		gunTotal = gunTotal + 1;
 		gunPrice = Math.ceil(10 * 1.10**gunTotal);
-		document.getElementById("gun").innerHTML = 'Buy a Gun for ' + gunPrice + ' Bullets';
+		document.getElementById("gun").innerHTML = numberformat.format(gunPrice);
 		document.getElementById("gunAmmount").innerHTML = 'You have ' + gunTotal + ' Guns';
 		document.getElementById("gunProduce").innerHTML = 'Shooting ' + (gunBPS * gunTotal).toFixed(1) + ' bullets per second';
 	}
 	else{
-		document.getElementById("gun").innerHTML = numberformat.format(gunPrice);
+		document.getElementById("gun").innerHTML = 'Buy a Gun for ' + gunPrice + ' Bullets';
 	}
 }
 
@@ -92,12 +92,12 @@ function buyPowerGun() { //function for buying more guns
 		bullets = bullets - powergunPrice;
 		powergunTotal = powergunTotal + 1;
 		powergunPrice = Math.ceil(100 * 1.25**powergunTotal);
-		document.getElementById("powergun").innerHTML = 'Buy a Power Gun for ' + powergunPrice + ' Bullets';
+		document.getElementById("powergun").innerHTML = numberformat.format(powergunPrice);
 		document.getElementById("powergunAmmount").innerHTML = 'You have ' + powergunTotal + ' Power Guns';
 		document.getElementById("powergunProduce").innerHTML = 'Shooting ' + (powergunBPS * powergunTotal).toFixed(1) + ' bullets per second';
 	}
 	else{
-		document.getElementById("powergun").innerHTML = numberformat.format(powergunPrice);
+		document.getElementById("powergun").innerHTML = 'Buy a Power Gun for ' + powergunPrice + ' Bullets';
 	}
 }
 
@@ -106,12 +106,12 @@ function buyRifle() {
 		bullets = bullets - riflePrice;
 		rifleTotal = rifleTotal + 1;
 		riflePrice = Math.ceil(1000 * 1.24**rifleTotal);
-		document.getElementById("rifle").innerHTML = 'Buy a Rifle for ' + riflePrice + ' Bullets';
+		document.getElementById("rifle").innerHTML = numberformat.format(riflePrice);
 		document.getElementById("rifleAmmount").innerHTML = 'You have ' + rifleTotal + ' Rifles';
 		document.getElementById("rifleProduce").innerHTML = 'Shooting ' + (rifleBPS * rifleTotal).toFixed(1) + ' bullets per second';
 	}
 	else{
-		document.getElementById("rifle").innerHTML = numberformat.format(riflePrice);
+		document.getElementById("rifle").innerHTML = 'Buy a Rifle for ' + riflePrice + ' Bullets';
 	}
 }
 
@@ -120,12 +120,12 @@ function buyAssaultRifle() {
 		bullets = bullets - assaultriflePrice;
 		assaultrifleTotal = assaultrifleTotal + 1;
 		assaultriflePrice = Math.ceil(15000 * 1.23**assaultrifleTotal);
-		document.getElementById("assaultrifle").innerHTML = 'Buy a Assault Rifle for ' + assaultriflePrice + ' Bullets';
+		document.getElementById("assaultrifle").innerHTML = numberformat.format(assaultriflePrice);
 		document.getElementById("assaultrifleAmmount").innerHTML = 'You have ' + assaultrifleTotal + ' Assault Rifles';
 		document.getElementById("assaultrifleProduce").innerHTML = 'Shooting ' + (assaultrifleBPS * assaultrifleTotal).toFixed(1) + ' bullets per second';
 	}
 	else{
-		document.getElementById("assaultrifle").innerHTML = numberformat.format(assaultriflePrice);
+		document.getElementById("assaultrifle").innerHTML = 'Buy a Assault Rifle for ' + assaultriflePrice + ' Bullets';
 	}
 }
 
