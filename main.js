@@ -518,20 +518,3 @@ function refreshRate() {
 	refreshRateVar = parseInt(document.getElementById("refreshRate").value);
 	document.getElementById("refreshRate").value;
 }
-
-var save = { 
-    bullets: bullets, 
-    gunTotal: gunTotal, 
-    powergunTotal: powergunTotal, 
-    rifleTotal: rifleTotal, 
-    assaultrifleTotal: assaultrifleTotal, 
-    smgTotal: smgTotal, 
-    clickStr: clickStr
-  } 
-  localStorage.setItem("save",JSON.stringify(save)); 
-  document.getElementById("saveGame").innerHTML = "Saved!"; 
-  window.setTimeout(save,5000); 
-} 
-function save(){ 
-  document.getElementById("saveGame").innerHTML = "Save Game"; 
-}
