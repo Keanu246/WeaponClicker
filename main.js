@@ -341,6 +341,26 @@ function checkUpgrades() {
 	}
 }
 
+function checkUpgrades() {
+	console.log(riflesuperupgrade);
+	if(rifleTotal >= 100 && riflesuperupgrade != true) {
+		var riflesuperupgradeElements = document.getElementsByClassName("riflesuperupgrade");
+		for (i = 0; i < riflesuperupgradeElements.length; i++){
+			riflesuperupgradeElements[i].style.display = "inline";
+		}
+	}
+}
+
+function checkUpgrades() {
+	console.log(assaultriflesuperupgrade);
+	if(assaultrifleTotal >= 100 && assaultriflesuperupgrade != true) {
+		var assaultriflesuperupgradeElements = document.getElementsByClassName("assaultriflesuperupgrade");
+		for (i = 0; i < assaultriflesuperupgradeElements.length; i++){
+			assaultriflesuperupgradeElements[i].style.display = "inline";
+		}
+	}
+}
+
 function gunupgrade() {
 	var gunupgradeCost = 100
 	if(bullets >= gunupgradeCost) {
@@ -536,6 +556,35 @@ function powergunsuperupgrade() {
 		}
 	}
 }
+
+function riflesuperupgrade() {
+	var riflesuperupgradeCost = 10000000000000
+	if(bullets >= riflesuperupgradeCost) {
+		bullets = bullets - riflesuperupgradeCost;
+		riflesuperupgrade = true;
+		localStorage.setItem("riflesuperupgrade", true);
+		riflegunBPS = riflegunBPS * 250;
+		var riflesuperupgradeElements = document.getElementsByClassName("riflesuperupgrade");
+		for (i = 0; i < riflesuperupgradeElements.length; i++){
+			riflesuperupgradeElements[i].style.display = "none";
+		}
+	}
+}
+
+function assaultriflesuperupgrade() {
+	var assaultriflesuperupgradeCost = 100000000000000
+	if(bullets >= assaultriflesuperupgradeCost) {
+		bullets = bullets - assaultriflesuperupgradeCost;
+		assaultriflesuperupgrade = true;
+		localStorage.setItem("assaultriflesuperupgrade", true);
+		assaultriflegunBPS = assaultriflegunBPS * 250;
+		var assaultriflesuperupgradeElements = document.getElementsByClassName("assaultriflesuperupgrade");
+		for (i = 0; i < assaultriflesuperupgradeElements.length; i++){
+			assaultriflesuperupgradeElements[i].style.display = "none";
+		}
+	}
+}
+
 
 function clickHarder() { // Upgrade click ability
 
