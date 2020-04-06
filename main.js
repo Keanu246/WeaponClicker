@@ -321,7 +321,25 @@ function checkUpgrades() {
 	}
 }
 
+function checkUpgrades() {
+	console.log(gunsuperupgrade);
+	if(gunTotal >= 100 && gunsuperupgrade != true) {
+		var gunsuperupgradeElements = document.getElementsByClassName("gunsuperupgrade");
+		for (i = 0; i < gunsuperupgradeElements.length; i++){
+			gunsuperupgradeElements[i].style.display = "inline";
+		}
+	}
+}
 
+function checkUpgrades() {
+	console.log(powergunsuperupgrade);
+	if(powergunTotal >= 100 && powergunsuperupgrade != true) {
+		var powergunsuperupgradeElements = document.getElementsByClassName("powergunsuperupgrade");
+		for (i = 0; i < powergunsuperupgradeElements.length; i++){
+			powergunsuperupgradeElements[i].style.display = "inline";
+		}
+	}
+}
 
 function gunupgrade() {
 	var gunupgradeCost = 100
@@ -487,6 +505,34 @@ function powergunupgrade6() {
 		var powergunupgrade6Elements = document.getElementsByClassName("powergunupgrade6");
 		for (i = 0; i < powergunupgrade6Elements.length; i++){
 			powergunupgrade6Elements[i].style.display = "none";
+		}
+	}
+}
+
+function gunsuperupgrade() {
+	var gunsuperupgradeCost = 100000000000
+	if(bullets >= gunsuperupgradeCost) {
+		bullets = bullets - gunsuperupgradeCost;
+		gunsuperupgrade = true;
+		localStorage.setItem("gunsuperupgrade", true);
+		gunBPS = gunBPS * 100;
+		var gunsuperupgradeElements = document.getElementsByClassName("gunsuperupgrade");
+		for (i = 0; i < gunsuperupgradeElements.length; i++){
+			gunsuperupgradeElements[i].style.display = "none";
+		}
+	}
+}
+
+function powergunsuperupgrade() {
+	var powergunsuperupgradeCost = 1000000000000
+	if(bullets >= powergunsuperupgradeCost) {
+		bullets = bullets - powergunsuperupgradeCost;
+		powergunsuperupgrade = true;
+		localStorage.setItem("powergunsuperupgrade", true);
+		gunBPS = gunBPS * 100;
+		var powergunsuperupgradeElements = document.getElementsByClassName("powergunsuperupgrade");
+		for (i = 0; i < powergunsuperupgradeElements.length; i++){
+			powergunsuperupgradeElements[i].style.display = "none";
 		}
 	}
 }
