@@ -1,10 +1,10 @@
 function formatNumbers() {
     if(formatValue) {
         formatValue = true;
-        document.getElementById("formatBullets").innerHTML = "Formatted!"
+        document.getElementById("formatBullets").innerHTML = "Formatted!";
     }
     else{
         formatValue = false;
-        document.getElementById("formatBullets").innerHTML = "Format"
+        document.getElementById("formatBullets").innerHTML = "Format";
     }
 } 
