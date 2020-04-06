@@ -62,7 +62,10 @@ var powergunUpgrade3 = false;
 var powergunUpgrade4 = false;
 var powergunUpgrade5 = false;
 var powergunUpgrade6 = false;
-var formatValue = false
+var gunSuperUpgrade = false;
+var powergunSuperUpgrade = false;
+var rifleSuperUpgrade = false;
+var assaultrifleSuperUpgrade = false
 	
 function addBullets() { //function for clicking
 	bullets = bullets + clickStr;
