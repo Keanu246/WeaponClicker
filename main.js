@@ -431,6 +431,17 @@ function clickHarder() { // Upgrade click ability
 	}
 }
 
+function clickHarder2() { // Upgrade click ability
+
+	if (bullets >= clickCost2) {
+		bullets = bullets - clickCost2;
+		clickStr = clickStr * 4;
+		clickCost = clickCost *1.5;
+		localStorage.setItem("clickStr", clickStr); localStorage.setItem("clickCost2", clickCost2);
+		document.getElementById("clickCost2Display").innerHTML = "Current level: " + clickStr.toFixed(1) + " Cost for next level: " + clickCost2.toFixed(1);
+	}
+}
+
 function refreshRate() {
 	// hey should you use the same name for functions and variables? maybe
 	refreshRateVar = parseInt(document.getElementById("refreshRate").value);
