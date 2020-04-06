@@ -19,6 +19,7 @@ function openTab(evt, pageName){
 //Initialize all global variables that are relevent to the game
 var totalBPS = 0;
 var bullets = 0;
+var superBullets = 0;
 var bulletstext = document.getElementById("bullets");
 var clickStr = 1;
 var clickCost = 10;
