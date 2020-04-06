@@ -80,7 +80,7 @@ function buyGun() { //function for buying more guns
 		document.getElementById("gunProduce").innerHTML = 'Shooting ' + (gunBPS * gunTotal).toFixed(1) + ' bullets per second';
 	}
 	else{
-		document.getElementById("gun").innerHTML = numberformat.format(gunPrice);
+		document.getElementById("gunFormat").innerHTML = numberformat.format(gunPrice);
 	}
 }
 
@@ -94,7 +94,7 @@ function buyPowerGun() { //function for buying more guns
 		document.getElementById("powergunProduce").innerHTML = 'Shooting ' + (powergunBPS * powergunTotal).toFixed(1) + ' bullets per second';
 	}
 	else{
-		document.getElementById("powergun").innerHTML = numberformat.format(powergunPrice);
+		document.getElementById("powergunFormat").innerHTML = numberformat.format(powergunPrice);
 	}
 }
 
@@ -107,6 +107,9 @@ function buyRifle() {
 		document.getElementById("rifleAmmount").innerHTML = 'You have ' + rifleTotal + ' Rifles';
 		document.getElementById("rifleProduce").innerHTML = 'Shooting ' + (rifleBPS * rifleTotal).toFixed(1) + ' bullets per second';
 	}
+	else{
+		document.getElementById("rifleFormat").innerHTML = numberformat.format(riflePrice);
+	}
 }
 
 function buyAssaultRifle() {
@@ -117,6 +120,9 @@ function buyAssaultRifle() {
 		document.getElementById("assaultrifle").innerHTML = 'Buy a Assault Rifle for ' + assaultriflePrice + ' Bullets';
 		document.getElementById("assaultrifleAmmount").innerHTML = 'You have ' + assaultrifleTotal + ' Assault Rifles';
 		document.getElementById("assaultrifleProduce").innerHTML = 'Shooting ' + (assaultrifleBPS * assaultrifleTotal).toFixed(1) + ' bullets per second';
+	}
+	else{
+		document.getElementById("assaultrifleFormat").innerHTML = numberformat.format(assaultriflePrice);
 	}
 }
 
@@ -129,6 +135,9 @@ function buySMG() {
 		document.getElementById("smgAmmount").innerHTML = 'You have ' + smgTotal + ' SMGs';
 		document.getElementById("smgProduce").innerHTML = 'Shooting ' + (smgBPS * smgTotal).toFixed(1) + ' bullets per second';
 	}
+	else{
+		document.getElementById("smgFormat").innerHTML = numberformat.format(smgPrice);
+	}
 }
 
 function buyShotgun() {
@@ -139,6 +148,9 @@ function buyShotgun() {
 		document.getElementById("shotgun").innerHTML = 'Buy a Shotgun for ' + shotgunPrice + ' Bullets';
 		document.getElementById("shotgunAmmount").innerHTML = 'You have ' + shotgunTotal + ' Shotguns';
 		document.getElementById("shotgunProduce").innerHTML = 'Shooting ' + (shotgunBPS * shotgunTotal).toFixed(1) + ' bullets per second';
+	}
+	else{
+		document.getElementById("shotgunFormat").innerHTML = numberformat.format(shotgunPrice);
 	}
 }
 
@@ -151,6 +163,9 @@ function buySCAR() {
 		document.getElementById("scarAmmount").innerHTML = 'You have ' + scarTotal + ' SCARs';
 		document.getElementById("scarProduce").innerHTML = 'Shooting ' + (scarBPS * scarTotal).toFixed(1) + ' bullets per second';
 	}
+	else{
+		document.getElementById("scarFormat").innerHTML = numberformat.format(scarPrice);
+	}
 }
 
 function buyPeacemaker() {
@@ -161,6 +176,9 @@ function buyPeacemaker() {
 		document.getElementById("peacemaker").innerHTML = 'Buy an Peacemaker for ' + peacemakerPrice + ' Bullets';
 		document.getElementById("peacemakerAmmount").innerHTML = 'You have ' + peacemakerTotal + ' Peacemakers';
 		document.getElementById("peacemakerProduce").innerHTML = 'Shooting ' + (peacemakerBPS * peacemakerTotal).toFixed(1) + ' bullets per second';
+	}
+	else{
+		document.getElementById("peacemakerFormat").innerHTML = numberformat.format(peacemakerPrice);
 	}
 }
 
