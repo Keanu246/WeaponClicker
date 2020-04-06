@@ -529,7 +529,7 @@ function powergunsuperupgrade() {
 		bullets = bullets - powergunsuperupgradeCost;
 		powergunsuperupgrade = true;
 		localStorage.setItem("powergunsuperupgrade", true);
-		gunBPS = gunBPS * 100;
+		powergunBPS = powergunBPS * 999;
 		var powergunsuperupgradeElements = document.getElementsByClassName("powergunsuperupgrade");
 		for (i = 0; i < powergunsuperupgradeElements.length; i++){
 			powergunsuperupgradeElements[i].style.display = "none";
