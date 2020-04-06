@@ -529,7 +529,7 @@ var save = {
     clickStr: clickStr
   } 
   localStorage.setItem("save",JSON.stringify(save)); 
-  document.getElementById("save").innerHTML = "Saved!"; 
+  document.getElementById("saveGame").innerHTML = "Saved!"; 
   window.setTimeout(reAddSave,5000); 
 } 
 function save(){ 
