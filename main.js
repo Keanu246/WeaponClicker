@@ -82,9 +82,9 @@ function buyGun() { //function for buying more guns
 		document.getElementById("gunAmmount").innerHTML = 'You have ' + gunTotal + ' Guns';
 		document.getElementById("gunProduce").innerHTML = 'Shooting ' + (gunBPS * gunTotal).toFixed(1) + ' bullets per second';
 	}
-	else{
-		document.getElementById("gun").innerHTML = 'Buy a Gun for ' + gunPrice + ' Bullets';
-	}
+	else{ 
+                alert("Not enough bullets to buy a gun!") 
+        } 
 }
 
 function buyPowerGun() { //function for buying more guns
@@ -96,9 +96,9 @@ function buyPowerGun() { //function for buying more guns
 		document.getElementById("powergunAmmount").innerHTML = 'You have ' + powergunTotal + ' Power Guns';
 		document.getElementById("powergunProduce").innerHTML = 'Shooting ' + (powergunBPS * powergunTotal).toFixed(1) + ' bullets per second';
 	}
-	else{
-		document.getElementById("powergun").innerHTML = 'Buy a Power Gun for ' + powergunPrice + ' Bullets';
-	}
+	else{ 
+                alert("Not enough bullets to buy a power gun!") 
+        }
 }
 
 function buyRifle() {
@@ -110,9 +110,9 @@ function buyRifle() {
 		document.getElementById("rifleAmmount").innerHTML = 'You have ' + rifleTotal + ' Rifles';
 		document.getElementById("rifleProduce").innerHTML = 'Shooting ' + (rifleBPS * rifleTotal).toFixed(1) + ' bullets per second';
 	}
-	else{
-		document.getElementById("rifle").innerHTML = 'Buy a Rifle for ' + riflePrice + ' Bullets';
-	}
+	else{ 
+                alert("Not enough bullets to buy a sniper rifle!") 
+        } 
 }
 
 function buyAssaultRifle() {
@@ -124,9 +124,9 @@ function buyAssaultRifle() {
 		document.getElementById("assaultrifleAmmount").innerHTML = 'You have ' + assaultrifleTotal + ' Assault Rifles';
 		document.getElementById("assaultrifleProduce").innerHTML = 'Shooting ' + (assaultrifleBPS * assaultrifleTotal).toFixed(1) + ' bullets per second';
 	}
-	else{
-		document.getElementById("assaultrifle").innerHTML = 'Buy a Assault Rifle for ' + assaultriflePrice + ' Bullets';
-	}
+	else{ 
+                alert("Not enough bullets to buy a AK-47!") 
+        } 
 }
 
 function buySMG() {
@@ -134,13 +134,13 @@ function buySMG() {
 		bullets = bullets - smgPrice;
 		smgTotal = smgTotal + 1;
 		smgPrice = Math.ceil(250000 * 1.22**smgTotal);
-		document.getElementById("smg").innerHTML = 'Buy a SMG for ' + smgPrice + ' Bullets';
+		document.getElementById("smg").innerHTML = numberformat.format(smgPrice);
 		document.getElementById("smgAmmount").innerHTML = 'You have ' + smgTotal + ' SMGs';
 		document.getElementById("smgProduce").innerHTML = 'Shooting ' + (smgBPS * smgTotal).toFixed(1) + ' bullets per second';
 	}
-	else{
-		document.getElementById("smg").innerHTML = numberformat.format(smgPrice);
-	}
+	else{ 
+                alert("Not enough bullets to buy a sub-machine gun!") 
+        } 
 }
 
 function buyShotgun() {
@@ -148,13 +148,13 @@ function buyShotgun() {
 		bullets = bullets - shotgunPrice;
 		shotgunTotal = shotgunTotal + 1;
 		shotgunPrice = Math.ceil(5000000 * 1.21**shotgunTotal);
-		document.getElementById("shotgun").innerHTML = 'Buy a Shotgun for ' + shotgunPrice + ' Bullets';
+		document.getElementById("shotgun").innerHTML = numberformat.format(shotgunPrice);
 		document.getElementById("shotgunAmmount").innerHTML = 'You have ' + shotgunTotal + ' Shotguns';
 		document.getElementById("shotgunProduce").innerHTML = 'Shooting ' + (shotgunBPS * shotgunTotal).toFixed(1) + ' bullets per second';
 	}
-	else{
-		document.getElementById("shotgun").innerHTML = numberformat.format(shotgunPrice);
-	}
+	else{ 
+                alert("Not enough bullets to buy a shotgun!") 
+        }
 }
 
 function buySCAR() {
@@ -162,13 +162,13 @@ function buySCAR() {
 		bullets = bullets - scarPrice;
 		scarTotal = scarTotal + 1;
 		scarPrice = Math.ceil(75000000 * 1.20**scarTotal);
-		document.getElementById("scar").innerHTML = 'Buy an SCAR for ' + scarPrice + ' Bullets';
+		document.getElementById("scar").innerHTML = numberformat.format(scarPrice);
 		document.getElementById("scarAmmount").innerHTML = 'You have ' + scarTotal + ' SCARs';
 		document.getElementById("scarProduce").innerHTML = 'Shooting ' + (scarBPS * scarTotal).toFixed(1) + ' bullets per second';
 	}
-	else{
-		document.getElementById("scar").innerHTML = numberformat.format(scarPrice);
-	}
+	else{ 
+                alert("Not enough bullets to buy a SCAR-H!") 
+        }
 }
 
 function buyPeacemaker() {
@@ -176,13 +176,13 @@ function buyPeacemaker() {
 		bullets = bullets - peacemakerPrice;
 		peacemakerTotal = peacemakerTotal + 1;
 		peacemakerPrice = Math.ceil(1000000000 * 1.19**peacemakerTotal);
-		document.getElementById("peacemaker").innerHTML = 'Buy an Peacemaker for ' + peacemakerPrice + ' Bullets';
+		document.getElementById("peacemaker").innerHTML = numberformat.format(peacemakerPrice);
 		document.getElementById("peacemakerAmmount").innerHTML = 'You have ' + peacemakerTotal + ' Peacemakers';
 		document.getElementById("peacemakerProduce").innerHTML = 'Shooting ' + (peacemakerBPS * peacemakerTotal).toFixed(1) + ' bullets per second';
 	}
-	else{
-		document.getElementById("peacemaker").innerHTML = numberformat.format(peacemakerPrice);
-	}
+	else{ 
+                alert("Not enough bullets to buy a peacemaker!") 
+        }
 }
 
 window.setInterval(function() { //Adds together all the Bullets and then updates the elements in the HTML
