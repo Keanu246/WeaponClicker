@@ -191,9 +191,37 @@ function buyPeacemaker() {
         }
 }
 
+function buyDoubleBarrel() {
+	if(bullets >= doublebarrelPrice) {
+		bullets = bullets - doublebarrelPrice;
+		doublebarrelTotal = doublebarrelTotal + 1;
+		doublebarrelPrice = Math.ceil(20000000000 * 1.18**doublebarrelTotal);
+		document.getElementById("doublebarrel").innerHTML = numberformat.format(doublebarrelPrice);
+		document.getElementById("doublebarrelAmmount").innerHTML = 'You have ' + doublebarrelTotal + ' Double Barrels';
+		document.getElementById("doublebarrelProduce").innerHTML = 'Shooting ' + (doublebarrelBPS * doublebarrelTotal).toFixed(1) + ' bullets per second';
+	}
+	else{ 
+                alert("Not enough bullets to buy a double barrel!") 
+        }
+}
+
+function buyMinigun() {
+	if(bullets >= minigunPrice) {
+		bullets = bullets - minigunPrice;
+		minigunTotal = minigunTotal + 1;
+		minigunPrice = Math.ceil(600000000000 * 1.17**minigunTotal);
+		document.getElementById("minigun").innerHTML = numberformat.format(minigunPrice);
+		document.getElementById("minigunAmmount").innerHTML = 'You have ' + minigunTotal + ' Miniguns';
+		document.getElementById("minigunProduce").innerHTML = 'Shooting ' + (minigunBPS * minigunTotal).toFixed(1) + ' bullets per second';
+	}
+	else{ 
+                alert("Not enough bullets to buy a minigun!") 
+        }
+}
+
 window.setInterval(function() { //Adds together all the Bullets and then updates the elements in the HTML
-	  bullets = (bullets + (gunTotal * gunBPS) + (powergunTotal * powergunBPS) + (rifleTotal * rifleBPS) + (assaultrifleTotal * assaultrifleBPS) + (smgTotal * smgBPS) + (shotgunTotal * shotgunBPS) + (scarTotal * scarBPS) + (peacemakerTotal * peacemakerBPS));
-		totalBPS = ((gunTotal * gunBPS) + (powergunTotal * powergunBPS) + (rifleTotal * rifleBPS) + (assaultrifleTotal * assaultrifleBPS) + (smgTotal * smgBPS) + (shotgunTotal * shotgunBPS) + (scarTotal * scarBPS) + (peacemakerTotal * peacemakerBPS));
+	  bullets = (bullets + (gunTotal * gunBPS) + (powergunTotal * powergunBPS) + (rifleTotal * rifleBPS) + (assaultrifleTotal * assaultrifleBPS) + (smgTotal * smgBPS) + (shotgunTotal * shotgunBPS) + (scarTotal * scarBPS) + (peacemakerTotal * peacemakerBPS) + (doublebarrelTotal * doublebarrelBPS) + (minigunTotal * minigunBPS));
+		totalBPS = ((gunTotal * gunBPS) + (powergunTotal * powergunBPS) + (rifleTotal * rifleBPS) + (assaultrifleTotal * assaultrifleBPS) + (smgTotal * smgBPS) + (shotgunTotal * shotgunBPS) + (scarTotal * scarBPS) + (peacemakerTotal * peacemakerBPS) + (doublebarrelTotal * doublebarrelBPS) + (minigunTotal * minigunBPS));
 		document.getElementById("bulletspersec").innerHTML = totalBPS.toFixed(1) + ' Bullets per second'
 		document.getElementById("bullets").innerHTML = points.toFixed(1) + ' Bullets';
 		document.cookie = "bullets=" + bullets.toFixed(1);
